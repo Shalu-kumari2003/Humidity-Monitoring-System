@@ -1,12 +1,12 @@
 Project Title: Air Temperature and Humidity Monitoring System
-1. Introduction
+1. Introduction:- 
 The Air Temperature and Humidity Monitoring System is designed to continuously monitor environmental conditions, specifically ambient temperature and relative humidity. These parameters are crucial for various applications including agriculture, industrial safety, weather forecasting, and home automation. The primary objective of this project is to design, build, and test a real-time monitoring system using affordable and accessible technology.
-2. Objectives
+2. Objectives:-
 •	To measure and display real-time temperature and humidity data.
 •	To store and possibly transmit the data for further analysis.
 •	To alert users if temperature or humidity exceed predefined thresholds.
 •	To implement an easy-to-use system that can be deployed in both indoor and outdoor environments.
-3. Components Used
+3. Components Used:-
 •	Microcontroller: Arduino Uno 
 •	Sensors: DHT11 (for temperature and humidity)
 •	Display: 16x2 LCD and I2C (for local display of readings)
@@ -14,25 +14,25 @@ The Air Temperature and Humidity Monitoring System is designed to continuously m
 •	Power Supply: USB or battery power or DC power supply(5V)
 •	Additional: Resistors, Relay,Breadboard, Jumper Wires, LED
 
-4 Circuit Diagram
+4 Circuit Diagram:-
 A simple connection between the DHT11 sensor’s data pin and a digital input on the Arduino UNO . The LCD is connected through I2C or directly to digital pins.
-5. Software and Tools
+5. Software and Tools:-
 •	Programming Language: C/C++ (Arduino IDE)
 •	Libraries Used:
 o	DHT sensor library
 o	Adafruit Unified Sensor
 o	LiquidCrystal_I2C (if using I2C LCD)
-6. Working Principle
+6. Working Principle:-
 1.	The sensor collects real-time temperature and humidity data from the environment.
 2.	The Arduino reads the data at regular intervals (e.g. every 2 seconds).
 3.	The data is then displayed on the screen.
 4.	If the measured values exceed the defined thresholds, the system can trigger an alert on Buzzer sound.
-7. Results
+7. Results:-
 •	The system was able to monitor and display the temperature and humidity accurately.
 •	Real-time data transmission to Serial plot monitor was successfully tested.
 •	Alerts were triggered when set thresholds were breached.
 •	The device was stable for continuous use over several hours.
- 8. Project code:
+ 8. Project code::-
 #include <Wire.h>
 #include <LiquidCrystal_I2C.h>
 #include <DHT.h>
@@ -124,7 +124,7 @@ delay(3000);                // Update every 3 seconds
 }
 
 
-9. Applications
+9. Applications:-
 •	Smart home automation systems
 •	Greenhouse environmental control
 •	Weather stations
